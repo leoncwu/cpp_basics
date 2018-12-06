@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+
+using std :: cout;
+using std :: endl;
+using std :: vector;
+
+class matrix{
+private:
+  int dimension;
+  vector<vector<double>> elements;
+public:
+  matrix() {}
+  matrix(int dim_input){
+    dimension = dim_input;
+    elements = vector<vector<double>>(dim_input,vector<double>(dim_input));
+  }
+
+  void set(){
+    for(int i = 0; i < dimension; i++){
+      for(int j = 0; j < dimension; j++){
+	//        elements.at(i).at(j) = value;
+      }
+    }
+
+  }
+  double get(int i, int j){
+    return elements.at(i).at(j);
+  }
+};
+
+int main(){
+
+
+  return 0;
+}

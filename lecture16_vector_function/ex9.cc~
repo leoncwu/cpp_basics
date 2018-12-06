@@ -1,0 +1,8 @@
+// Homework of Chunlin Wu (cw34973)
+#include <iostream>
+#include <cmath>
+#include <vector>
+
+use std: cin;
+use std: cout;
+use std: vector;

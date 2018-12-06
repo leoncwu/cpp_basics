@@ -1,0 +1,44 @@
+// Assignment of Chunlin Wu (cw34973)
+#include <iostream>
+#include <cmath>
+using std::cout;
+using std::endl;
+using std::cin;
+
+struct primesequence {int number_of_primes_found; int last_number_tested;};
+
+int nextprime(struct primesequence &sequence){
+  bool prime = true;
+
+  for(int i=2; i< sequence.last_number_tested && prime; i++){
+    if(sequence.last_number_tested%i == 0){
+      prime = false;
+    }
+  }
+
+  sequence.last_number_tested++;
+
+  if(prime){
+    sequence.number_of_primes_found++;
+    return sequence.last_number_tested-1;
+  }
+  //  else{
+  //return 0;
+  //}
+
+}
+
+int main(){
+  struct primesequence sequence {0,2};
+  int how_many;
+
+  cout << "Input how many successive prime numbers required:" << endl;
+  cin >> how_many;
+
+  while(sequence.number_of_primes_found < how_many){
+    int number = nextprime(sequence);
+    cout << "Number " << number << " is prime." << endl;
+  }
+
+  return 0;
+}

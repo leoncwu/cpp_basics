@@ -1,0 +1,34 @@
+// Assignment of Chunlin Wu (cw34973)
+#include <iostream>
+#include <cmath>
+using std::cout;
+using std::endl;
+using std::cin;
+
+struct vector {double x; double y;};
+
+double inner_product(struct vector v1, struct vector v2){
+    return v1.x*v2.x + v1.y*v2.y;
+}
+
+
+int main() {
+  struct vector v1, v2;
+  double mul;
+
+  cout << "input coordiantes 1 of vector 1" << endl;
+  cin >> v1.x;
+  cout << "input coordiantes 2 of vector 1" << endl;
+  cin >> v1.y;
+  cout << "input coordiantes 1 of vector 2" << endl;
+  cin >> v2.x;
+  cout << "input coordiantes 2 of vector 2" << endl;
+  cin >> v2.y;
+
+
+  mul = inner_product(v1, v2);
+
+  cout << " the inner product of vector (" << v1.x << "," << v1.y << ") " << "and " << "(" << v2.x << "," << v2.y << ") " << "is " << mul  << endl;
+
+  return 0;
+}

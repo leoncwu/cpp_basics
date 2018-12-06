@@ -1,0 +1,38 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cin;
+// Assignment of Chunlin Wu (cw34973)
+int main(){
+  int input1, input2;
+  int residual;
+  cout << "Please input the first number for calculation:" << endl ;
+  cin >> input1;
+  cout << "Please input the second number for calculation:" << endl ;
+  cin >> input2;
+  cout << "Processing ..." << endl;
+  residual = input1%input2;
+  if(residual == 0){
+    cout << input2 << " is a divisor of " << input1  << endl;
+  }
+  else{
+    cout << input2 << " is not a divisor of " << input1  << endl;
+  }
+
+  return 0;
+}
+
+
+
+
+// c - space  select
+// exc w
+// c - y
+
+
+// c - space select
+// c - c 
+
+
+// C - v
+// esc - v
