@@ -19,12 +19,12 @@ public:
     int o_cout = 0;
     for(auto e : numbers){
       if(e%2 == 0){
-        even.push_back(1);
-	even[e_cout++] = e;
+        even.push_back(e);
+	/*	even[e_cout++] = e;*/
       }
       else{
-        odd.push_back(1);
-	odd[o_cout++] = e;
+        odd.push_back(e);
+	/*	odd[o_cout++] = e;*/
       }
     }
   }
