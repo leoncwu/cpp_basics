@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using std::cout;
+using std::endl;
+
+int main(){
+  bool check_right = false;
+
+  int i = 3;
+  if(check_right){
+    int i = 5;
+    cout << i << endl;
+  }
+  cout << i << endl;
+
+
+
+
+
+
+}
